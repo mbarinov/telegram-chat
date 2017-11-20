@@ -8,13 +8,13 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.(js)$/,
 				exclude: /node_modules/,
 				use: [
 					{
 						loader: 'babel-loader',
 						options: {
-							presets: ['es2017', 'react', 'stage-2'],
+							presets: ['es2015', 'react', 'stage-2'],
 						},
 					},
 				],
@@ -26,10 +26,6 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
-			},
-			{
-				test: /\.(png|jpg)$/,
-				loader: 'url-loader?limit=8192',
 			},
 		],
 	},
