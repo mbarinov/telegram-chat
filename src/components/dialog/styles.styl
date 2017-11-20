@@ -1,0 +1,71 @@
+.dialog {
+  display flex
+  flex-direction row
+  padding 7px 16px
+  height 48px
+
+  cursor pointer
+  font-size 18px
+  overflow hidden
+  white-space nowrap
+  word-wrap break-word
+  text-overflow ellipsis
+
+  &:hover {
+    background #f2f6fa
+
+    .dialog-data__message {
+      color #698192
+    }
+  }
+
+  .dialog-avatar {
+    margin-right 8px
+  }
+
+  .dialog-data {
+    display flex
+    flex-direction column
+    justify-content space-evenly
+
+    width 80%
+
+    font-size 12px
+
+    .dialog-data__title {
+      font-weight 700
+    }
+
+    .dialog-data__message {
+      width 156px
+      margin-right 8px
+      overflow hidden
+      text-overflow ellipsis
+      color gray
+    }
+  }
+
+  .dialog-metadata {
+    display flex
+    flex-direction column
+    align-items center
+    justify-content space-evenly
+    width 60px
+
+    .dialog-metadata__date {
+      font-size 11px
+      color #b3b3b3
+    }
+
+    .dialog-metadata__unread {
+      display inline
+      padding 4px 8px
+      background #bfbfbf
+
+      border-radius 14px
+
+      font-size 11px
+      color #fff
+    }
+  }
+}
