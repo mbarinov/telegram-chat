@@ -3,8 +3,6 @@ var webpack = require('webpack');
 module.exports = {
 	devtool: 'source-map',
 	entry: [
-		'webpack-dev-server/client?http://localhost:8080',
-		'webpack/hot/only-dev-server',
 		'./src/index.js',
 	],
 	module: {
@@ -44,12 +42,6 @@ module.exports = {
 		contentBase: './dist',
 		hot: true,
 		historyApiFallback: true,
-		proxy: {
-			'/api': {
-				target: 'http://localhost:3000',
-				secure: false,
-			},
-		},
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
