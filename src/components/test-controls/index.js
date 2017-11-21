@@ -58,7 +58,7 @@ class TestControls extends Component {
 							экране (Один из последних диалогов).</p>
 						<div className="button" onClick={this.emitLastMessage}>Вжух №3</div>
 					</div>
-					<span className="iguessitsdoneprettywell">Crafted ❤️ with by Max Barinov</span>
+					<span className="iguessitsdoneprettywell">Crafted with ❤️ by Max Barinov</span>
 				</div>
 			</div>
 		);
